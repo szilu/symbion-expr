@@ -44,28 +44,28 @@ parser.symbol(')')
 const numberType = {
 	'_':	{js: n => `${n}`},
 	'+':	{
-		js: (a, b) => `${a}+${b}`,
+		js: (a, b) => `(${a}+${b})`,
 		inv: [
 			(parser, r, b) => parser.symOper('-', [r, b]),
 			(parser, r, a) => parser.symOper('-', [r, a])
 		]
 	},
 	'-':	{
-		js: (a, b) => `${a}-${b}`,
+		js: (a, b) => `(${a}-${b})`,
 		inv: [
 			(parser, r, b) => parser.symOper('+', [r, b]),
 			(parser, r, a) => parser.symOper('-', [a, r])
 		]
 	},
 	'*':	{
-		js: (a, b) => `${a}*${b}`,
+		js: (a, b) => `(${a}*${b})`,
 		inv: [
 			(parser, r, b) => parser.symOper('/', [r, b]),
 			(parser, r, a) => parser.symOper('/', [r, a])
 		]
 	},
 	'/':	{
-		js: (a, b) => `${a}/${b}`,
+		js: (a, b) => `(${a}/${b})`,
 		inv: [
 			(parser, r, b) => parser.symOper('*', [r, b]),
 			(parser, r, a) => parser.symOper('/', [a, r])
