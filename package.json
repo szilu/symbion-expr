@@ -1,14 +1,20 @@
 {
   "name": "symbion-expr",
   "version": "0.0.1",
-  "description": "TDOP expression parser",
+  "description": "Javascript expression parser/evaluator/solver library",
   "main": "index.js",
+  "author": "Szilard Hajba",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/szilu/symbion-expr"
+  },
   "scripts": {
     "lint": "eslint index.js src/*.js grammar/*.js",
     "test": "jest",
     "test-cover": "jest --coverage"
   },
+  "dependencies": {},
   "devDependencies": {
     "big.js": "^5.0.3",
     "eslint": "^4.8.0",
@@ -18,6 +24,5 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "jest": "^22.1.4"
-  },
-  "dependencies": {}
+  }
 }

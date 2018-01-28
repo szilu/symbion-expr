@@ -52,7 +52,7 @@ You can even solve simple expressions:
 > let inv = SMP.evaluator.invert('x', ast2, 'r')
 > SMP.evaluator.expression(inv)
 '(r-5)/3'
-SMP.evaluator.eval(inv, {r: 14})
+> SMP.evaluator.eval(inv, {r: 14})
 3
 ```
 
