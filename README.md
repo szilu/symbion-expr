@@ -96,7 +96,7 @@ The expression parser is based on the [Top Down Operator Precedence parser](http
 
 The parser generates an AST for the expression.
 
-**FIXME**: The API is not stable yet, so the Parser is not documented, but you can look at the sample grammar files in the *grammer/* directory.
+**FIXME**: The API is not stable yet, so the Parser is not documented, but you can look at the sample grammar files in the *grammar/* directory.
 
 Eval
 ----
