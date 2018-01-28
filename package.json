@@ -1,0 +1,23 @@
+{
+  "name": "symbion-expr",
+  "version": "0.0.1",
+  "description": "TDOP expression parser",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint index.js src/*.js grammar/*.js",
+    "test": "jest",
+    "test-cover": "jest --coverage"
+  },
+  "devDependencies": {
+    "big.js": "^5.0.3",
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.1.4"
+  },
+  "dependencies": {}
+}
